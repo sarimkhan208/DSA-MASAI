@@ -39,10 +39,25 @@
 
 let nameArr = [ 'rancho', 'chatur', 'raju', 'farhan', 'virus', 'joy' ]
 let marksArr = [ '45', '32', '30', '28', '32', '45' ] , n = 6
-myfun(nameArr,marksArr,n)
-
+function runProgram(input){
+    input = input.trim().split("\n");
+    let n = +input[0];
+    let line = 1;
+    let arr = []
+    for(let i=0; i<n; i++){
+        arr.push(input[line++].trim().split(" "))
+    }
+    let nameArr = [];
+    let marksArr = [];
+    for(let i=0; i<arr.length; i++){
+        nameArr.push(arr[i][0])
+        marksArr.push(arr[i][1])
+    }
+    myfun(nameArr,marksArr,n);
+}
 function myfun(nameArr,marksArr,n){
     function sortName(nameArr,marksArr,n){
+        console.log(nameArr,marksArr,n)
         for(let i=0; i<n-1; i++){
             for(let j=0; j<n-1-i; j++){
                 if(check(nameArr[j],nameArr[j+1])){
@@ -99,3 +114,30 @@ function myfun(nameArr,marksArr,n){
     }
     final(nameArr,marksArr,n)
 }
+
+if (process.env.USER === "") {
+    runProgram(``);
+} else {
+        process.stdin.resume();
+  process.stdin.setEncoding("ascii");
+  let read = "";
+  process.stdin.on("data", function (input) {
+        read += input;
+  });
+  process.stdin.on("end", function () {
+        read = read.replace(/\n$/, "");
+    read = read.replace(/\n$/, "");
+    runProgram(read);
+  });
+  process.on("SIGINT", function () {
+        read = read.replace(/\n$/, "");
+    runProgram(read);
+    process.exit(0);
+  });
+}
+
+
+
+
+
+
