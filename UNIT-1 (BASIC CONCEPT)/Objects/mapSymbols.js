@@ -36,7 +36,8 @@
 // *-24
 
 
-mapSymbols(10)
+let N=10
+mapSymbols(N)
 function mapSymbols(N) {
     let arr=["!","@","#","$","%","^","&","*"]
     let obj={}
