@@ -1,6 +1,7 @@
 // // Map Symbols @ Ended
 
 // // Description
+////nna
 
 // // + You are given a number stored in a variable with the name n
 // // + You have to map the following symbols starting from the value 1
@@ -50,3 +51,4 @@ function mapSymbols(N) {
         console.log([k]+"-"+obj[k])
     }
 }
+
