@@ -7,6 +7,7 @@
 
 // If there are two elements present the maximum number of times, print
 // the one which comes first in the array.
+//hh
 
 
 // Sample Input
