@@ -10,7 +10,7 @@
 // In our problem, we lift our fingers whenever there is a change of chara
 // cters while typing
 
-// Consider, while typing the same character, no fingers are lifted
+//   Consider, while typing the same character, no fingers are lifted
 
 
 // Sample Input 1 
