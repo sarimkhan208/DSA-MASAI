@@ -18,6 +18,8 @@
 
 
 
+
+
 let arr = [1,3,5,6] , n=arr.length , k=5
 console.log(myfun(arr,n,k))
 function myfun(arr,n,k){
