@@ -1,4 +1,4 @@
-// Apply Basic Maths @ Ended
+// Apply Basic Maths
 
 // Description
 
